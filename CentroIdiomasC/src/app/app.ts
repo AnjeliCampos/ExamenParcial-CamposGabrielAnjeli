@@ -1,0 +1,15 @@
+import { Component, signal } from '@angular/core';
+import { PrimerComponente } from './components/primer-componente/primer-componente';
+import { SegundoComponente } from './components/segundo-componente/segundo-componente';
+import { TercerComponente } from './components/tercer-componente/tercer-componente';
+import { CuartoComponente } from './components/cuarto-componente/cuarto-componente';
+
+@Component({
+  imports: [PrimerComponente, SegundoComponente, TercerComponente, CuartoComponente],
+  selector: 'app-root',
+  styleUrl: './app.css',
+  templateUrl: './app.html',
+})
+export class App {
+  protected readonly title = signal('CentroIdiomasC');
+}
